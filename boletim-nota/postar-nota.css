@@ -1,0 +1,70 @@
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 90px;
+      color: #4682B4;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #2a5883;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .botao-salvar {
+      margin-top: 20px;
+      display: block;
+      padding: 10px 20px;
+      background-color: #2a5883;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .botao-salvar:hover {
+      background-color: #244a6e;
+    }
