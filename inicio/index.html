@@ -11,6 +11,11 @@
 <body>
 
   <nav>
+    <div class="menu-toggle" onclick="
+      document.querySelector('.menu-esquerda').classList.toggle('show');
+      document.querySelector('.menu-direita').classList.toggle('show');
+    ">☰</div>
+
     <div class="menu-esquerda">
       <a href="#bem-vindo">Bem-vindo</a>
       <a href="#servicos">Serviços</a>
@@ -23,69 +28,65 @@
   </nav>
 
   <section id="bem-vindo">
-  <div id="bem-vindos">
-    <h1>BEM VINDOS AO PORTAL ESCOLAR</h1>
-    <p>Seja bem-vindo ao nosso Portal Escolar! Aqui, alunos, professores e responsáveis encontram um ambiente digital prático e acessível para acompanhar o desempenho escolar, acessar atividades, se comunicar e facilitar o processo educacional.</p>
-    <div class="container">
-          <a href="escolher.cadastro.html" class="btn">Comece agora</a>
-     </div> 
+    <div id="bem-vindos">
+      <h1>BEM VINDOS AO PORTAL ESCOLAR</h1>
+      <p>Seja bem-vindo ao nosso Portal Escolar! Aqui, alunos, professores e responsáveis encontram um ambiente digital prático e acessível para acompanhar o desempenho escolar, acessar atividades, se comunicar e facilitar o processo educacional.</p>
+      <div class="container">
+        <a href="" class="btn">Comece agora</a>
+      </div> 
     </div> 
   </section>
 
+  <section id="servicos">
+    <section class="secao-servicos">
+      <h2 class="titulo2">serviços</h2>
+      <p class="descricao">
+        Criamos este espaço para ser o apoio que você procura, mas nem sempre encontra com facilidade. Aqui, você vai ter acesso a:
+      </p>
 
-     <section id="servicos">
-        <section class="secao-servicos">
-    <h2 class="titulo2">serviços</h2>
-    <p class="descricao">
-      Criamos este espaço para ser o apoio que você procura, mas nem sempre encontra com facilidade. Aqui, você vai ter acesso a:
-    </p>
-
-    <div class="cards-container">
-      <div class="card">
-        <img src="alunos.png" alt="Área do Aluno">
-        <p>Área do Aluno: Notas, atividades, cronograma de aulas e recados.</p>
+      <div class="cards-container">
+        <div class="card">
+          <img src="alunos.png" alt="Área do Aluno">
+          <p>Área do Aluno: Notas, atividades, cronograma de aulas e recados.</p>
+        </div>
+        <div class="card">
+          <img src="professor.png" alt="Área do Professor">
+          <p>Área do Professor: Lançamento de notas, postagem de atividades e mensagens.</p>
+        </div>
+        <div class="card">
+          <img src="pais.png" alt="Área do Responsável">
+          <p>Área do Responsável: Acompanhamento da frequência, notas e recados da escola.</p>
+        </div>
+        <div class="card">
+          <img src="agenda.png" alt="Agenda Escolar">
+          <p>Agenda Escolar: Eventos, reuniões e datas importantes.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="professor.png" alt="Área do Professor">
-        <p>Área do Professor: Lançamento de notas, postagem de atividades e mensagens.</p>
-      </div>
-      <div class="card">
-        <img src="pais.png" alt="Área do Responsável">
-        <p>Área do Responsável: Acompanhamento da frequência, notas e recados da escola.</p>
-      </div>
-      <div class="card">
-        <img src="agenda.png" alt="Agenda Escolar">
-        <p>Agenda Escolar: Eventos, reuniões e datas importantes.</p>
-      </div>
-    </div>
+    </section>
   </section>
-  </section>
 
-    <section id="sobre-nos">
+  <section id="sobre-nos">
     <div class="Sobre-nos">
-    <div class="texto">
-      <h1>Sobre Nós</h1>
-      <p>Somos uma equipe comprometida com a inovação na educação. Criamos este sistema para tornar o dia a dia escolar mais organizado, transparente e acessível a todos. Acreditamos que a tecnologia pode aproximar a escola das famílias e facilitar o trabalho dos educadores.</p>
+      <div class="texto">
+        <h1>Sobre Nós</h1>
+        <p>Somos uma equipe comprometida com a inovação na educação. Criamos este sistema para tornar o dia a dia escolar mais organizado, transparente e acessível a todos. Acreditamos que a tecnologia pode aproximar a escola das famílias e facilitar o trabalho dos educadores.</p>
+      </div>
+      <div class="imagem">
+        <img src="sobre-nos.png" alt="Ilustração de alunos estudando" />
+      </div>
     </div>
-    <div class="imagem">
-      <img src="sobre-nos.png" alt="Ilustração de alunos estudando" />
-    </div>
-  </div>
-</section>
+  </section>
 
-    <footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2025 Portal Escolar. Todos os direitos reservados.</p>
-    <p>
-      <a href="#sobre-nos">Sobre nós</a> |
-      <a href="#servicos">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </p>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Portal Escolar. Todos os direitos reservados.</p>
+      <p>
+        <a href="#sobre-nos">Sobre nós</a> |
+        <a href="#servicos">Serviços</a> |
+        <a href="contato.html">Contato</a>
+      </p>
     </div>
-   </div>
-  
+  </footer>
 </body>
 </html>
 
