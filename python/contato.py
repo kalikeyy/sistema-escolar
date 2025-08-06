@@ -1,5 +1,5 @@
 def sistema_contato():
-    print("=== Fale Conosco ===")
+    print("Fale Conosco")
     email = input("Digite seu e-mail: ")
     mensagem = input("Digite sua mensagem ou pergunta: ")
 
