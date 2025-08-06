@@ -1,3 +1,24 @@
+:root {
+  --cor-fundo-nav: #275f8d;
+  --cor-texto-nav: white;
+  --cor-hover-nav: #07335a;
+  --cor-bem-vindo: #4682B4;
+  --cor-servicos: #ffffff;
+  --cor-sobre-nos: #c4e4ff;
+  --cor-fundo-footer: #2c3e50;
+  --cor-texto-footer: #fff;
+}
+
+body.dark {
+  --cor-fundo-nav: #1a1a1a;
+  --cor-texto-nav: #f1f1f1;
+  --cor-hover-nav: #333333;
+  --cor-bem-vindo: #222;
+  --cor-servicos: #111;
+  --cor-sobre-nos: #1e1e1e;
+  --cor-fundo-footer: #000;
+  --cor-texto-footer: #ddd;
+}
 
 
  * {
@@ -7,7 +28,7 @@
 }
 
 nav {
-  background-color: #275f8d;
+  background-color: var(--cor-fundo-nav);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -24,6 +45,7 @@ nav {
 }
 
 nav a {
+  color: var(--cor-texto-nav);
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -33,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #07335a;
+  background-color: var(--cor-hover-nav);
 }
 
 .cadastro {
@@ -46,9 +68,9 @@ section {
   min-height: 100vh;
 }
 
-#bem-vindo { background-color: #4682B4; }
-#servicos { background-color: #ffffff; }
-#sobre-nos { background-color: #c4e4ff; }
+#bem-vindo {background-color: var(--cor-bem-vindo); }
+#servicos { background-color: var(--cor-servicos); }
+#sobre-nos {  background-color: var(--cor-sobre-nos); }
 
 #bem-vindos { 
   height: 700px; 
@@ -210,7 +232,8 @@ section {
 }
 
 .footer a {
-  color: #f1c40f;
+  background-color: var(--cor-fundo-footer);
+  color: var(--cor-texto-footer);
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
@@ -221,7 +244,6 @@ section {
   text-decoration: underline;
 }
 
-/* --------- RESPONSIVIDADE --------- */
 .menu-toggle {
   display: none;
   font-size: 26px;
@@ -275,4 +297,6 @@ section {
   .menu-toggle {
     display: none;
   }
+}
+
 }
