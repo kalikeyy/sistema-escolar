@@ -2,14 +2,14 @@ def sistema():
     usuarios = {}  
 
     while True:
-        print("\n=== Sistema Escolar ===")
+        print("\nSistema Escolar")
         print("1 - Cadastro")
         print("2 - Login")
         print("3 - Sair")
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            print("\n--- Cadastro ---")
+            print("\nCadastro")
             print("Escolha o tipo de perfil:")
             print("1 - Responsável")
             print("2 - Aluno")
@@ -53,7 +53,7 @@ def sistema():
                 print(f"cadastro concluído para {nome} ({perfil}).")
 
         elif escolha == "2":
-            print("\n--- Login ---")
+            print("\nLogin")
             print("Escolha o tipo de perfil para login:")
             print("1 - Responsável")
             print("2 - Aluno")
