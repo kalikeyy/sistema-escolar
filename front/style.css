@@ -53,7 +53,7 @@ nav {
 .menu-direita-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* espaço entre botões e tema */
+  gap: 10px; 
 }
 
 nav a {
@@ -338,4 +338,5 @@ section {
     display: none;
   }
 }
+
 
