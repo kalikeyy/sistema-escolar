@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL ESCOLAR</title>
+     <link rel="icon" type="image/x-icon" href="icon.webp">
+      <link rel="stylesheet" href="menu.css">
+       <link rel="stylesheet" href="matricula.css">
+ </head>
+ <body>
+  
+<nav>
+  <div class="nav-esquerda">
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <a href="inicio-aluno.html" class="logo">
+      <img src="icon.webp" alt="Logo">
+      PORTAL ESCOLAR
+    </a>
+
+    <div class="menu-botoes" id="menu-botoes">
+      <a href="agenda-aluno.html">Agenda</a>
+      <a href="boletim-aluno-pai.html">Boletim</a>
+    </div>
+  </div>
+
+  <div class="perfil-container">
+    <button id="toggle-theme">🌙</button>
+    <a href="perfil-aluno.html" class="perfil">
+      <img src="PERFIL.png" alt="Perfil">
+    </a>
+  </div>
+</nav>
+<main>
+
+  <div class="container">
+    <h2>Rematrícula do Aluno</h2>
+    <form action="#" method="post">
+      <div class="campo">
+        <label for="nomeAluno">Nome completo do aluno</label>
+        <input type="text" id="nomeAluno" name="nomeAluno" required />
+      </div>
+
+      <div class="campo">
+        <label for="serie">Série para o próximo ano</label>
+        <select id="serie" name="serie" required>
+          <option value="">Selecione</option>
+          <option value="6ano">6º Ano</option>
+          <option value="7ano">7º Ano</option>
+          <option value="8ano">8º Ano</option>
+          <option value="9ano">9º Ano</option>
+          <option value="1medio">1º Ano EM</option>
+          <option value="2medio">2º Ano EM</option>
+          <option value="3medio">3º Ano EM</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="nomeResponsavel">Nome do responsável</label>
+        <input type="text" id="nomeResponsavel" name="nomeResponsavel" required />
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone de contato</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail do responsável</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="campo">
+        <label for="confirmacao">Confirma rematrícula?</label>
+        <select id="confirmacao" name="confirmacao" required>
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <button class="botao" type="submit">Enviar Rematrícula</button>
+    </form>
+  </div>
+</main>
+     <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Portal Escolar. Todos os direitos reservados.</p>
+  </div>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu-botoes');
+    const btn = document.getElementById('toggle-theme');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+    }
+
+    if (localStorage.getItem('tema') === 'dark') {
+      document.body.classList.add('dark');
+      btn.textContent = '☀️';
+    }
+
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+        localStorage.setItem('tema', 'dark');
+        btn.textContent = '☀️';
+      } else {
+        localStorage.setItem('tema', 'light');
+        btn.textContent = '🌙';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

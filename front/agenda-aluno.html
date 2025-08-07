@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL ESCOLAR</title>
+     <link rel="icon" type="image/x-icon" href="icon.webp">
+      <link rel="stylesheet" href="menu.css">
+       <link rel="stylesheet" href="agenda-aluno.css">
+ </head>
+ <body>
+  
+ <nav>
+  <div class="nav-esquerda">
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <a href="inicio-aluno.html" class="logo">
+      <img src="icon.webp" alt="Logo">
+      PORTAL ESCOLAR
+    </a>
+
+    <div class="menu-botoes" id="menu-botoes">
+      <a href="agenda-aluno.html">Agenda</a>
+      <a href="boletim-aluno-pai.html">Boletim</a>
+    </div>
+  </div>
+
+  <div class="perfil-container">
+    <button id="toggle-theme">🌙</button>
+    <a href="perfil-aluno.html" class="perfil">
+      <img src="PERFIL.png" alt="Perfil">
+    </a>
+  </div>
+</nav>
+<main>
+
+<h1>Agenda Semanal</h1>
+  <div class="semana">
+    <div class="dia">
+      <h3>Segunda-feira</h3>
+      <div class="atividade">Leitura do capítulo 3 e responder exercícios da página 45.</div>
+    </div>
+    <div class="dia">
+      <h3>Terça-feira</h3>
+      <div class="atividade">Revisão de frações e resolução da lista 2.</div>
+    </div>
+    <div class="dia">
+      <h3>Quarta-feira</h3>
+      <div class="atividade">Trabalho sobre ...</div>
+    </div>
+    <div class="dia">
+      <h3>Quinta-feira</h3>
+      <div class="atividade">Apresentação em grupo.</div>
+    </div>
+    <div class="dia">
+      <h3>Sexta-feira</h3>
+      <div class="atividade vazio">Nenhuma atividade cadastrada.</div>
+    </div>
+  </div>
+
+   <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Portal Escolar. Todos os direitos reservados.</p>
+  </div>
+  
+ <script>
+  const btn = document.getElementById('toggle-theme');
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    btn.textContent = '☀️';
+  } else {
+    btn.textContent = '🌙';
+  }
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    if (document.body.classList.contains('dark')) {
+      btn.textContent = '☀️';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      btn.textContent = '🌙';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
+  </body>
+ </html>

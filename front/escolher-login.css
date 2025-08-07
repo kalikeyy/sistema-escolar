@@ -1,0 +1,73 @@
+:root {
+  --cor-body: #e7e8eb;
+  --cor-formulario: #7a9ac4;
+  --cor-titulo: #02084b;
+  --cor-link:#02084b ;
+  --cor-botao: #02084b;
+}
+
+body.dark {
+  --cor-body: #343333;
+  --cor-formulario: #222222;
+  --cor-titulo: #1895f0;
+  --cor-link:#1895f0 ;
+  --cor-botao: #1895f0;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--cor-body);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .login-container {
+      background-color: var(--cor-formulario);
+      padding: 1%;
+      border-radius: 12px;
+      text-align: center;
+      width: 300px;
+      height: 400px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 30px;
+      color: var(--cor-titulo);
+    }
+
+    .login-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background-color: var(--cor-botao);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .login-btn:hover {
+      background-color: #0a0218;
+    }
+
+    .cadastro-link {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .cadastro-link a {
+      color: var(--cor-link);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cadastro-link a:hover {
+      text-decoration: underline;
+    }

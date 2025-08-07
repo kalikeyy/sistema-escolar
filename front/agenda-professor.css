@@ -1,0 +1,117 @@
+  :root {
+  --cor-body: #e7e8eb;
+  --cor-formulario: #7a9ac4;
+  --cor-titulo: #02084b;
+  --cor-botao: #02084b;
+}
+
+body.dark {
+  --cor-body: #343333;
+  --cor-formulario: #222222;
+  --cor-titulo: #1895f0;
+  --cor-botao: #1895f0;
+}
+
+     body {
+      font-family: Arial, sans-serif;
+      background-color: var(--cor-body);
+}
+
+
+    h1 {
+      text-align: center;
+      color: var(--cor-titulo);
+      margin-bottom: 30px;
+      margin-top: 200px;
+    }
+
+    .agenda {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 60px;
+      margin-bottom: 200px;
+    }
+
+    .dia {
+       background-color: var(--cor-formulario);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dia h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: var(--cor-titulo);
+    }
+
+    .dia textarea {
+      resize: none;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .botao {
+      padding: 10px;
+      background-color: var(--cor-botao);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .botao:hover {
+      background-color: #1c4566;
+    }
+
+    @media (max-width: 768px) {
+  h1 {
+    margin-top: 120px;
+    font-size: 22px;
+  }
+
+  .dia h2 {
+    font-size: 18px;
+  }
+
+  .dia textarea {
+    font-size: 13px;
+    height: 90px;
+  }
+
+  .botao {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+  .agenda {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .dia {
+    padding: 15px;
+  }
+
+  .dia textarea {
+    height: 80px;
+  }
+
+  .botao {
+    width: 100%;
+  }
+}

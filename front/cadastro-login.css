@@ -1,0 +1,74 @@
+:root {
+  --cor-body: #e7e8eb;
+  --cor-formulario: #7a9ac4;
+  --cor-titulo: #02084b;
+  --cor-cadastro:#02084b ;
+  --cor-botao: #02084b;
+}
+
+body.dark {
+  --cor-body: #343333;
+  --cor-formulario: #222222;
+  --cor-titulo: #1895f0;
+  --cor-cadastro:#1895f0 ;
+  --cor-botao: #1895f0;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--cor-body);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .formulario {
+      background-color: var(--cor-formulario);
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--cor-titulo);
+    }
+
+    .campo {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .campo label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .campo input {
+      padding: 10px;
+      border: 1px solid #bebdbd;
+      border-radius: 6px;
+    }
+
+    .botao {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--cor-botao);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #0a0218;
+    }

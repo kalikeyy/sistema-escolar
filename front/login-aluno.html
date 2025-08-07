@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PORTAL ESCOLAR</title>
+  <link rel="stylesheet" href="cadastro-login.css">
+   <link rel="stylesheet" href="index-menu.css">
+   <link rel="icon" type="image/x-icon" href="icon.webp">
+</head>
+<body>
+  
+<nav>
+    <div class="menu-toggle" onclick="
+      document.querySelector('.menu-esquerda').classList.toggle('show');
+      document.querySelector('.menu-direita').classList.toggle('show');
+    ">☰</div>
+
+    <div class="menu-esquerda">
+      <a href="#bem-vindo">Bem-vindo</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre-nos">Sobre nós</a>
+    </div>
+    <div class="menu-direita-container">
+    <div class="menu-direita">
+      <a href="escolher.cadastro.html" class="cadastro">Cadastro</a>
+      <a href="escolher-login.html">Login</a>
+    </div>
+    <button id="toggle-theme">🌙</button>
+  </div>
+</nav>
+
+
+  <form class="formulario">
+    <h2 class="titulo">Login de Aluno</h2>
+
+    <div class="campo">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div class="campo">
+      <label for="cgm">CGM</label>
+      <input type="text" id="CGM" name="CGM" required>
+    </div>
+
+    <div class="campo">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required>
+    </div>
+
+    <a href="inicio-aluno.html">
+    <button class="botao" type="submit">logar</button>
+    </a>
+  </form>
+
+   <script>
+  const btn = document.getElementById('toggle-theme');
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    btn.textContent = '☀️';
+  } else {
+    btn.textContent = '🌙';
+  }
+
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    if (document.body.classList.contains('dark')) {
+      btn.textContent = '☀️';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      btn.textContent = '🌙';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
+
+    
+</body>
+</html>
